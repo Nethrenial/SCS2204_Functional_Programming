@@ -1,2 +1,2 @@
-# SCS2204_Functional_Programming
-Repository for scs2204 functional programming subject
+# UCSC Computer Science
+My repository to manage resources for the ucsc cs degree program.
