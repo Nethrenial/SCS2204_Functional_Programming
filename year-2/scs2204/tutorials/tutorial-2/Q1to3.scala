@@ -1,6 +1,7 @@
+//Question 1-3
 //using @main instead of "extends App" because using scala 3
 
-@main def main() = {
+@main def main(): Unit = {
 
     var  k,i,j = 2 
     var m,n = 5
