@@ -1,0 +1,81 @@
+.player-selection-screen {
+  width: 100vw;
+  height: 100vh;
+
+  background: rgb(9, 9, 121);
+  background: radial-gradient(
+    circle,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(2, 0, 36, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+}
+
+.player-selection-screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+.player-selection-screen h1 {
+  font-family: "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS",
+    Helvetica, sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.player-names-box {
+  margin-top: 4rem;
+  display: flex;
+  /* height: 50vh; */
+  width: 60vw;
+  gap: 2rem;
+}
+
+.player-names-box > div {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+}
+
+.player-names-box h2 {
+  font-size: 3rem;
+  color: rgb(9, 9, 121);
+  text-align: center;
+}
+
+.player-name-input {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-name-input input {
+  color: #151515;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 4px solid rgba(9, 9, 121, 0.4);
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.player-name-input input:focus {
+  outline: 0;
+  border-bottom: 4px solid rgb(9, 9, 121);
+}
+
+
+.btn--back {
+  position: absolute !important;
+  top: 3rem;
+  left: 3rem;
+}

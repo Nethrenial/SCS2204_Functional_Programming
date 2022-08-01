@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Roll a Dice! is a simple dice roll game developed with HTML5, CSS3 & Vanilla JavaScript"
+    />
+    <link rel="shortcut icon" href="./img/dice_1.png" type="image/png" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Roll The Dice!</title>
+  </head>
+  <body>
+    <main class="scoreboard-screen" style="display: none">
+      <div class="container scoreboard-screen-container">
+        <button
+          class="btn btn--dark btn--back back-to-welcome"
+          style="
+            margin-top: 3rem;
+            font-family: 'Pacifico', 'Kaushan Script', Futura, 'Roboto',
+              'Trebuchet MS', Helvetica, sans-serif;
+          "
+        >
+          <span class="btn__shadow"></span>
+          <span class="btn__edge"></span>
+          <span class="btn__front btn__text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--tabler"
+              width="32"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 13L5 9l4-4M5 9h11a4 4 0 0 1 0 8h-1"
+              ></path>
+            </svg>
+          </span>
+        </button>
+        <h1>Scoreboard</h1>
+        <div class="scoreboard"></div>
+        <p class="no-records">You haven't played yet!</p>
+      </div>
+    </main>
+    <main class="welcome-screen">
+      <div class="container welcome-screen-container">
+        <div class="welcome-screen__stage">
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+          <div class="welcome-screen__layer"></div>
+        </div>
+        <div class="welcome-screen__images">
+          <img src="./img/dice_1.png" alt="Dice img 1" />
+          <img src="./img/dice_6.png" alt="Dice img 2" />
+        </div>
+        <div class="welcome-screen__buttons">
+          <button id="play-btn" class="btn btn--red btn--wide">
+            <span class="btn__shadow"></span>
+            <span class="btn__edge"></span>
+            <span class="btn__front btn__text"> Play </span>
+          </button>
+          <button id="scoreboard-btn" class="btn btn--purple btn--wide">
+            <span class="btn__shadow"></span>
+            <span class="btn__edge"></span>
+            <span class="btn__front btn__text"> Scoreboard </span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <main class="player-selection-screen">
+      <div class="container player-selection-screen-container">
+        <button
+          class="btn btn--purple btn--back back-to-welcome"
+          style="
+            margin-top: 3rem;
+            font-family: 'Pacifico', 'Kaushan Script', Futura, 'Roboto',
+              'Trebuchet MS', Helvetica, sans-serif;
+          "
+        >
+          <span class="btn__shadow"></span>
+          <span class="btn__edge"></span>
+          <span class="btn__front btn__text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--tabler"
+              width="32"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 13L5 9l4-4M5 9h11a4 4 0 0 1 0 8h-1"
+              ></path>
+            </svg>
+          </span>
+        </button>
+        <h1>Enter player names</h1>
+        <div class="player-names-box">
+          <div class="player-names-box__left">
+            <h2>Player 1</h2>
+            <div class="player-name-input">
+              <input type="text" id="player1-name" name="player1-name" />
+            </div>
+          </div>
+          <div class="player-names-box__left">
+            <h2>Player 2</h2>
+            <div class="player-name-input">
+              <input type="text" id="player2-name" name="player2-name" />
+            </div>
+          </div>
+        </div>
+        <button
+          id="player-select-btn"
+          class="btn btn--red"
+          style="
+            margin-top: 3rem;
+            font-family: 'Pacifico', 'Kaushan Script', Futura, 'Roboto',
+              'Trebuchet MS', Helvetica, sans-serif;
+          "
+        >
+          <span class="btn__shadow"></span>
+          <span class="btn__edge"></span>
+          <span class="btn__front btn__text"> Play Now ! </span>
+        </button>
+      </div>
+    </main>
+    <main class="game-screen">
+      <div class="game-screen-container">
+        <h1 class="round">Round 1</h1>
+        <div class="dices">
+          <img src="./img/dice_1.png" alt="Dice" id="dice-1" />
+          <img src="./img/dice_1.png" alt="Dice" id="dice-2" />
+        </div>
+        <div class="players">
+          <div class="player1">
+            <div class="player1-inner">
+              <p id="player1-score" style="font-size: 5rem">0</p>
+              <img src="./img/person1.png" alt="Player 1" width="200" />
+              <h2 class="player-name player-name--1">Player 1</h2>
+            </div>
+          </div>
+          <button class="btn btn--red btn--wide" id="roll">
+            <span class="btn__shadow"></span>
+            <span class="btn__edge"></span>
+            <span class="btn__front btn__text"> Roll! </span>
+          </button>
+          <div class="player2">
+            <div class="player2-inner">
+              <p id="player2-score" style="font-size: 5rem">0</p>
+              <img src="./img/person2.png" alt="Player 2" width="200" />
+              <h2 class="player-name player-name--2">Player 2</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="turn"></h2>
+    </main>
+    <main class="win-screen">
+      <div class="win-screen-container">
+        <h1></h1>
+        <p id="winner-score"></p>
+        <p id="loser-score"></p>
+        <div class="buttons">
+          <button class="btn btn--dark btn--wide" id="play-again">
+            <span class="btn__shadow"></span>
+            <span class="btn__edge"></span>
+            <span class="btn__front btn__text"> Play again! </span>
+          </button>
+          <button class="btn btn--purple" id="home">
+            <span class="btn__shadow"></span>
+            <span class="btn__edge"></span>
+            <span class="btn__front btn__text">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--ic"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8h5z"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

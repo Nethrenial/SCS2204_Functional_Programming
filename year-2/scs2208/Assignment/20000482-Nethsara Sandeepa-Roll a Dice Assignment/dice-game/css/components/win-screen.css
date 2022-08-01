@@ -1,0 +1,78 @@
+.win-screen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  background: rgb(240, 0, 60);
+  background: radial-gradient(
+    circle,
+    rgba(240, 0, 60, 1) 7%,
+    rgba(163, 0, 54, 1) 74%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.win-screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Pacifico", "Kaushan Script", Futura, "Roboto", "Trebuchet MS",
+    Helvetica, sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #fff;
+  transform: translateY(2rem);
+  text-align: center;
+}
+
+
+#winner-score, #loser-score {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+
+
+#winner-score span, #loser-score span {
+  font-size: 5rem;
+}
+
+#winner-score {
+margin-top: 8rem;
+}
+
+#loser-score {
+  margin-top: 4rem;
+}
+
+.win-screen .buttons {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 3rem;
+}
+
+@keyframes bounceScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

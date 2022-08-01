@@ -1,17 +1,17 @@
-def toUpper(input: String): String = input.toUpperCase()
-def toLower(input: String): String = input.toLowerCase()
+def toUpper(str: String): String = str.toUpperCase()
+def toLower(str: String): String = str.toLowerCase()
 
-def formatNames(input: String, indexes: List[Int] = List())(callback: String => String): String = {
-  if(indexes.isEmpty) {
-    return callback(input)
+def formatNames(name: String)(callback: String => String)(positions: Int*): String = {
+  if(positions.isEmpty) {
+    return callback(name)
   }
   var position = 0
   var result = ""
-  while (position < input.length()) {
-    if(indexes.contains(position)) {
-      result = result.concat(callback(input.charAt(position).toString()))
+  while (position < name.length()) {
+    if(positions.contains(position)) {
+      result = result.concat(callback(name.charAt(position).toString()))
     } else {
-      result = result + input.charAt(position).toString()
+      result = result + name.charAt(position).toString()
     }
     position = position + 1
   }
@@ -19,9 +19,9 @@ def formatNames(input: String, indexes: List[Int] = List())(callback: String => 
 }
 
 object main extends App {
-  println(formatNames("Benny")(toUpper))
-  println(formatNames("Niroshan",List(0,1))(toUpper))
-  println(formatNames("Saman")(toLower))
-  println(formatNames("Kumara",List(5))(toUpper))
+  println(formatNames("Benny")(toUpper)())
+  println(formatNames("Niroshan")(toUpper)(0, 1))
+  println(formatNames("Saman")(toLower)())
+  println(formatNames("Kumara")(toUpper)(5))
 
 }
