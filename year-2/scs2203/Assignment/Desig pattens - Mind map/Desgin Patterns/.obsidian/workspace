@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "82e9a6a064428f79",
+    "type": "split",
+    "children": [
+      {
+        "id": "f0e84b2b2663a02e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "design pattern categories/Behavioral design patterns.md",
+            "mode": "source",
+            "source": false
+          }
+        },
+        "group": "538e61f08af02b6f"
+      },
+      {
+        "id": "b8a22ecff889e3e5",
+        "type": "leaf",
+        "state": {
+          "type": "localgraph",
+          "state": {
+            "file": "design pattern categories/Behavioral design patterns.md",
+            "options": {
+              "collapse-filter": false,
+              "search": "",
+              "localJumps": 5,
+              "localBacklinks": true,
+              "localForelinks": true,
+              "localInterlinks": false,
+              "showTags": false,
+              "showAttachments": false,
+              "hideUnresolved": false,
+              "collapse-color-groups": true,
+              "colorGroups": [],
+              "collapse-display": false,
+              "showArrow": true,
+              "textFadeMultiplier": 0,
+              "nodeSizeMultiplier": 1.17042013064133,
+              "lineSizeMultiplier": 1.33372921615202,
+              "collapse-forces": false,
+              "centerStrength": 0.518713248970312,
+              "repelStrength": 10,
+              "linkStrength": 1,
+              "linkDistance": 200,
+              "scale": 0.8164965809277264,
+              "close": true
+            }
+          }
+        },
+        "group": "538e61f08af02b6f"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ccb70732f0cd72a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "49319a41b23c5ba4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3248b3e8ff36306",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c2e3ccae674716ec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5abc79ef183302e9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4af725141702ca4f",
+    "type": "split",
+    "children": [
+      {
+        "id": "83ba9caea9079ad1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b731b20c8c699ebf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "design pattern categories/Behavioral design patterns.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9b0f4a46d23fb729",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "design pattern categories/Behavioral design patterns.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b5af9160378d70e0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e07ec91bd506d6b8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "design pattern categories/Behavioral design patterns.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f0e84b2b2663a02e",
+  "lastOpenFiles": [
+    "Design patterns.md",
+    "design pattern categories/Behavioral design patterns.md",
+    "design pattern categories/behavioral design patterns/Template method pattern.md",
+    "design pattern categories/behavioral design patterns/Strategy pattern.md",
+    "design pattern categories/behavioral design patterns/Mediator pattern.md",
+    "design pattern categories/behavioral design patterns/Memento pattern.md",
+    "design pattern categories/behavioral design patterns/State pattern.md",
+    "design pattern categories/behavioral design patterns/Iterator pattern.md",
+    "design pattern categories/behavioral design patterns/Command pattern.md",
+    "design pattern categories/behavioral design patterns/Interpreters pattern.md"
+  ]
+}

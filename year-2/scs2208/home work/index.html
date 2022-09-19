@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAD Express Homework</title>
+</head>
+
+<body>
+    <h1>Simple calc</h1>
+    <form action="/answer" method="post">
+        <label for="name">Val1</label>
+        <input type="number" id="val1" name="val1" required>
+        <label for="birthday">Val2: </label>
+        <input type="number" name="val2" id="val2" required>
+        <select name="op" id="op" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button type="submit">
+            Calculate
+        </button>
+    </form>
+</body>
+
+</html>

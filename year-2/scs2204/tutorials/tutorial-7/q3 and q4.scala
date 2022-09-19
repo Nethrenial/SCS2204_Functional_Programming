@@ -23,7 +23,7 @@ class Account(
   override def toString(): String = {
     s"""Account No. ${this.accountNo}:
           Owner: 
-            Name = ${this.accountHolder}   
+            Name = ${this.accountHolder}
             NIC = ${this.NIC}
           Balance: ${this.balance}
           Current interest rate: ${if (this.balance > 0) 0.05 else -0.1}

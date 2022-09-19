@@ -42,7 +42,7 @@ class Rational(var numerator: Int, var denominator: Int) {
     println(s"x-y-z = ${x} - ${y} - ${z} = ${x.sub(y).sub(z)}")
 
     // with - operator
-    println(s"x-y-z = ${x} - ${y} - ${z} = ${x- y- z}")
+    println(s"x-y-z = ${x} - ${y} - ${z} = ${x - y - z}")
 
 
 
